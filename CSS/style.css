@@ -25,3 +25,45 @@ ul {
 }
 
 /*header*/
+#w-header {
+  width: 100%;
+  height: 100%;
+
+}
+
+#w-header .hBox {
+  max-width: 1325px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#w-header .hBox .nav-box {
+  padding-right: 14px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+
+#w-nav {
+  margin: 0 12px -42PX 0;
+}
+
+.logo {
+  width: 53px;
+  margin-top: 15px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.icon-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
