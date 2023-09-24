@@ -6,19 +6,31 @@
     <meta name="description" content="1991年アメリカNY発祥のカフェ。焙煎から抽出までこだわったコーヒーとオーガニック野菜など産地食材を使用した料理を提供する。">
     <link href="CSS/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="home" class="body">
     <header id="w-header">
       <div class="hBox flexB">
         <h1><a href="index.html"><img class="logo" src="images/logo.png" alt="HMCoffeeホーム"></a></h1>
         <div class="nav-box">
           <nav id="w-nav">
             <ul class="main-nav">
-              <li>商品一覧</li> <!--js入る-->
-              <li>NEWS</li>
-              <li>ABOUT US</li>
-              <li>ONLINE STORE</li>
-              <li>EVENT</li>
-              <li>RECRUIT</li>
+              <li>
+                <a href="">商品一覧</a>
+              </li> <!--js入る-->
+              <li>
+                <a href="">NEWS</a>
+              </li>
+              <li>
+                <a href="">ABOUT US</a>
+              </li>
+              <li>
+                <a href="">ONLINE STORE</a>
+              </li>
+              <li>
+                <a href="">EVENT</a>
+              </li>
+              <li>
+                <a href="">RECRUIT</a>
+              </li>
             </ul>
           </nav>
           <ul class="icon-nav">
@@ -30,9 +42,24 @@
         </div>
       </div>
     </header>
-    <main id="main">
-      <div class="home-content"></div>
-      <div class="downBox">
+    <main id="main-content">
+      <div class="home-content">
+        <ul class="slideUL slick-intialized slick-slider slick-dotted">
+          <div class="slick-list draggable">
+            <div class="slick-track" style="opacity:  1; width: 2862px;">
+              <div class=""></div>
+              <div class=""></div>
+              <div class=""></div>
+            </div>
+          </div>
+          <ul class="slick-dots" style role="tablist">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="down-box">
         <p class="tll">
           <a href="">【重要】公式アプリ会員の皆様へ</a>
         </p>
@@ -61,11 +88,11 @@
         <section class="rec-sec">
           <div class="img-box">
             <div class="photo-box">
-              <img src="" alt=""><!--画像-->
+              <img src="images/overview1.jpg" alt="HarvestMarkCoffeeブレンド">
             </div>
             <div class="text-box">
               <div class="inner-box">
-                <p class="name">ーーーーーーーー</p>
+                <p class="name">Harvest Mark Coffeeブレンド</p>
                 <p class="privce">ーーー</p>
                 <p class="text">
                   "ーーーーーーーーーーーーーーーーーーーーーーーー"
@@ -78,11 +105,11 @@
           </div>
           <div class="img-box right">
             <div class="photo-box">
-              <img src="" alt=""><!--画像-->
+              <img src="images/overview2.jpg" alt="日本産のオーガニック野菜">
             </div>
             <div class="text-box">
               <div class="inner-box">
-                <p class="name">ーーーーーーーー</p>
+                <p class="name">日本産のオーガニック野菜</p>
                 <p class="privce">ーーー</p>
                 <p class="text">
                   "ーーーーーーーーーーーーーーーーーーーーーーーー"
@@ -95,11 +122,11 @@
           </div>
           <div class="img-box">
             <div class="photo-box">
-              <img src="" alt=""><!--画像-->
+              <img src="images/overview3.jpg" alt="ウエディングアフターパーティー">
             </div>
             <div class="text-box">
               <div class="inner-box">
-                <p class="name">ーーーーーーーー</p>
+                <p class="name">ウエディングアフターパーティー</p>
                 <p class="privce">ーーー</p>
                 <p class="text">
                   "ーーーーーーーーーーーーーーーーーーーーーーーー"
@@ -161,7 +188,7 @@
               <li class="shop">
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="店舗"><!--画像-->
+                    <img src="images/category01.png" alt="店舗">
                   </div>
                   <p>店舗</p>
                 </a>
@@ -169,27 +196,27 @@
               <li class="big">
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="オリジナル商品"><!--画像-->
+                    <img src="images/category02.png" alt="オリジナル商品">
                   </div>
                   <p>オリジナル商品</p>
                 </a>
               </li>
               <li class="big">
                 <div class="photo">
-                  <img src="" alt="コーヒー"><!--画像-->
+                  <img src="images/category03.png" alt="コーヒー">
                 </div>
                 <p>コーヒー</p>
               </li>
               <li class="smoll">
                 <div class="photo">
-                  <img src="" alt="ドリップパック"><!--画像-->
+                  <img src="images/category04.png" alt="ドリップパック">
                 </div>
                 <p>ドリップパック</p>
               </li>
               <li class>
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="フード"><!--画像-->
+                    <img src="images/category05.png" alt="フード">
                   </div>
                   <p>フード</p>
                 </a>
@@ -197,7 +224,7 @@
               <li class>
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="ドリンク"><!--画像-->
+                    <img src="images/category06.png" alt="ドリンク">
                   </div>
                   <p>ドリンク</p>
                 </a>
@@ -205,7 +232,7 @@
               <li class>
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="ギフト"><!--画像-->
+                    <img src="images/category07.png" alt="ギフト">
                   </div>
                   <p>ギフト</p>
                 </a>
@@ -213,7 +240,7 @@
               <li class>
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="野菜"><!--画像-->
+                    <img src="images/category08.png" alt="野菜">
                   </div>
                   <p>野菜</p>
                 </a>
@@ -221,7 +248,7 @@
               <li class>
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="ベーカリー"><!--画像-->
+                    <img src="images/category09.png" alt="ベーカリー">
                   </div>
                   <p>ベーカリー</p>
                 </a>
@@ -229,7 +256,7 @@
               <li class>
                 <a href="">
                   <div class="photo">
-                    <img src="" alt="ケーキ"><!--画像-->
+                    <img src="images/category10.png" alt="ケーキ">
                   </div>
                   <p>ケーキ</p>
                 </a>
@@ -237,9 +264,9 @@
             </ul>
             <ul class="link-ul">
               <li>
-                <a href=""><!--画像-->
+                <a href="">
                   <div class="icon">
-                    <img src="" alt="">
+                    <img src="images/icon01.png" alt="ABOUTUS">
                   </div>
                   <p class="ttl">
                     <span class="item">ABOUT US</span>
@@ -248,9 +275,9 @@
                 </a>
               </li>
               <li>
-                <a href=""><!--画像-->
+                <a href="">
                   <div class="icon">
-                    <img src="" alt="">
+                    <img src="images/icon02.png" alt="NEWS">
                   </div>
                   <p class="ttl">
                     <span class="item">NEWS</span>
@@ -259,9 +286,9 @@
                 </a>
               </li>
               <li>
-                <a href=""><!--画像-->
+                <a href="">
                   <div class="icon">
-                    <img src="" alt="">
+                    <img src="images/icon03.png" alt="ONLINESTORE">
                   </div>
                   <p class="ttl">
                     <span class="item">ONLINE STORE</span>
@@ -272,7 +299,7 @@
               <li>
                 <a href=""><!--画像-->
                   <div class="icon">
-                    <img src="" alt="">
+                    <img src="images/icon04.png" alt="EVENT">
                   </div>
                   <p class="ttl">
                     <span class="item">EVENT</span>
@@ -283,7 +310,7 @@
               <li>
                 <a href=""><!--画像-->
                   <div class="icon">
-                    <img src="" alt="">
+                    <img src="images/icon05.png" alt="RECRUIT">
                   </div>
                   <p class="ttl">
                     <span class="item">RECRUIT</span>
@@ -296,8 +323,58 @@
         </section>
       </div>
     </main>
-    <footer>
-      <small>©︎Harvest Mark Coffee inc.</small>
+    <footer id="w-fotter">
+      <div class="f-box">
+        <div class="f-logo">
+          <a href="">
+            <img src="" alt="Harvest Mark Coffee">
+          </a>
+        </div>
+        <ul class="f-navi f-navi02">
+          <li>
+            <a href="">利用規約</a>
+            "/"
+          </li>
+          <li>
+            <a href="">プライバシーポリシー</a>
+            "/"
+          </li>
+          <li>
+            <a href="">特定商取引法に基づく表記</a>
+            "/"
+          </li>
+          <li>
+            <a href="">お問い合わせ</a>
+            "/"
+          </li>
+          <li>
+            <a href="">ご注文に関するお問い合わせ</a>
+          </li>
+        </ul>
+        <ul class="f-navi02">
+          <li>
+            <a href="">
+              <img src="images/f-navi0201.png" alt="LINE">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/f-navi0202.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/f-navi0203.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="images/f-navi0204.png" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+        <small>©︎Harvest Mark Coffee inc.</small>
+      </div>
     </footer>
   </body>
 </html>
