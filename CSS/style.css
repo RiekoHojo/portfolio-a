@@ -23,12 +23,19 @@ ul {
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+
+ a:visited {
+  color: white;
+ }
 
 /*---------------------header---------------------*/
 #w-header {
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
+  background-color: aquamarine;/*色*/
 }
 
 #w-header .hBox {
@@ -59,17 +66,13 @@ ul {
   display: inline-block;
 }
 
-#w-nav .main-nav li {
-  margin: 0 26px;
-  display: inline-block;
-}
-
 #w-nav .main-nav li a {
   padding-bottom: 42px;
   display: block;
   position: relative;
   font-weight: bold;
   letter-spacing: 0.07em;
+  color: black;
 }
 
 #w-nav .icon-nav {
@@ -92,8 +95,225 @@ ul {
   width: 30px;
 }
 
-/*---------------------body---------------------*/
+/*---------------------body homecontents---------------------*/
+.home-content .slideUL .slick-dots {
+  position: absolute;
+  bottom: 24px;
+}
 
+/*---------------------body downbox---------------------*/
 .down-box {
   margin-bottom: 56px;
+  background-color: black;
 }
+
+.down-box p {
+  color: white;
+  line-height: 2.18;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.down-box p.tll {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.down-box p span {
+  padding-right: 40px;
+}
+
+/*---------------------body event recommend---------------------*/
+.event-sec {
+  margin-top: 80px;
+  margin-bottom: 115px;
+}
+
+.head-line01 {
+  margin-bottom: 49px;
+}
+
+.head-line01 .en {
+  font-size: 1.6rem;
+  /*margin-bottom: 7px;*/
+  display: block;
+}
+
+.rec-sec {
+  padding-bottom: 67px;
+}
+
+.rec-sec .head-line01 {
+  margin-bottom: 49px;
+}
+
+.rec-sec .com-slide {
+  margin-bottom: 123px;
+}
+
+/*---------------------body imgbox---------------------*/
+.rec-sec .img-box {
+  margin-bottom: 83px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rec-sec .img-box .photo-box {
+  width: 50%;
+  overflow: hidden;
+}
+
+.rec-sec .img-box.right .photo-box {
+  order: 1;
+}
+
+.rec-sec .img-box .photo-box img {
+  width: 100%;
+}
+
+.rec-sec .img-box .text-box {
+  margin-top: -4px;
+  width: 50%;
+}
+
+.rec-sec .img-box .text-box .inner-box {
+  margin-right: auto;
+  padding-left: 78px;
+  max-width: 470px;
+}
+
+.rec-sec .img-box.right .text-box .inner-box {
+  margin: 0 0 0 auto;
+  padding: 0 78px 0 0 ;
+}
+
+.rec-sec .img-box .text-box .name {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.rec-sec .img-box .text-box .privce {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: '', sans-serif;/*font未*/
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rec-sec .img-box .text-box .text {
+  margin-bottom: 24px;
+  line-height: 2.02;
+  font-weight: bold;
+}
+
+/*---------------------body news---------------------*/
+.news-sec {
+  padding: 56px 0;
+  background-color: blueviolet;/*色*/
+}
+
+.news-sec .news-box .head-line01 {
+  width: 150px;
+}
+
+.news-sec .news-box .head-line01 .en {
+  font-size: 2.8rem;
+}
+
+.news-sec .news-box .news-ul {
+  margin: -8px 0 29px;
+  width: calc(100% - 176px);
+}
+
+.news-sec .news-box .news-ul li a {
+  padding: 13px 10px;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.news-sec .news-box .news-ul li a:hover {
+  opacity: 0.75;
+}
+
+.news-sec .news-box .news-ul li .time {
+  margin-right: 42px;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: ;/*font未*/
+}
+
+.news-sec .btn {
+  text-align: right;
+}
+
+.news-sec .btn a {
+  display: inline-block;
+  padding-right: 24px;
+  font-weight: bold;
+}
+
+.news-sec .btn a:hover {
+  opacity: 0.75;
+}
+
+/*---------------------body category---------------------*/
+.category-sec {
+  padding-top: 62px;
+}
+
+.category-sec .head-line01 {
+  margin-bottom: 58px;
+}
+
+.category-sec .head-line01 .en {
+  font-size: 2.8rem;
+}
+
+.category-sec .cata-ul {
+  margin: -30px 0 95px;
+}
+
+.category-sec .cata-ul li {
+  margin-top: 30px;
+  width: calc((100% - 60px)/3);
+}
+
+.category-sec .cata-ul li.big {
+  width: 65.7%;
+}
+
+.category-sec .cata-ul li a {
+  display: block;
+  position: relative;
+}
+
+.category-sec .cata-ul li .photo {
+  overflow: hidden;
+}
+
+.category-sec .cata-ul li .photo img {
+  width: 100%;
+}
+
+.category-sec .cata-ul li p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.92;
+  text-align: center;
+  z-index: 2;
+}
+
+.category-sec .cata-ul li.all a:hover {
+  opacity: 0.75;
+}
+
