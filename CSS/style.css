@@ -37,9 +37,48 @@ a {
   color: white;
  }
 
+@media all and (min-width: 897px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 896px) {
+  body {
+    min-width: inherit;
+    font-size: 1.3rem;
+  }
+
+  a:hover,
+  a:hover img {
+    opacity: 1 !important;
+  }
+
+  .pc {
+    display: none !important;
+  }
+}
+
+/*---------------------全体---------------------*/
+.flex,
+.flexA,
+.flexB,
+.flexC {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.flexB {
+  justify-content: space-between;
+}
+
 /*---------------------header---------------------*/
 #w-header {
   background-color: aquamarine;/*色*/
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  position: relative;
+  z-index: 30;
 }
 
 #w-header .hBox {
@@ -52,11 +91,13 @@ a {
   padding-right: 14px;
   box-sizing: border-box;
   justify-content: flex-end;
-  /*display: flex;*/
+  width: calc(100% - 100px);
+  display: flex;
+  align-items: center;
 }
 
 #w-nav {
-  margin: 0 12px -42PX 0;
+  margin: 0 12px -42px 0;
 }
 
 #w-nav .main-nav {
@@ -81,22 +122,26 @@ a {
 
 #w-nav .icon-nav {
   position: relative;
-}
-
-#w-nav .icon-nav li {
-  margin: 0 14px;
-  width: 21px;
-}
-
-.logo {
-  width: 53px;
-  margin-top: 15px;
-}
-
-.icon-nav {
   display: inline-block;
   margin-top: -3px 16px 0 0;
   width: 30px;
+}
+
+#w-header .hBox .icon-nav li {
+  margin: 0 14px;
+  width: 30px;
+  display: inline-block;
+}
+
+.logo {
+  width: 80px;
+  margin-top: 15px;
+}
+
+.flexB {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 /*---------------------body homecontents---------------------*/
@@ -317,8 +362,9 @@ a {
   z-index: 2;
 }
 
-.category-sec .cata-ul li.all a:hover {
-  opacity: 0.75;
+.category-sec .content {
+  width: 1086px;
+  margin: 0 auto;
 }
 
 .category-sec .link-ul li {
