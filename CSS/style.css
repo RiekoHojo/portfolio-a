@@ -264,6 +264,11 @@ a {
   background-color: blueviolet;/*色*/
 }
 
+.news-sec .content {
+  width: 1086px;
+  margin: 0 auto;
+}
+
 .news-sec .news-box .head-line01 {
   width: 150px;
 }
@@ -411,6 +416,7 @@ a {
 .category-sec .link-ul.link-ul02 li a {
   display: block;
   text-align: center;
+  color: black;
 }
 
 .category-sec .link-ul.link-ul02 li .ttl .en {
@@ -420,10 +426,68 @@ a {
   letter-spacing: 0.07em;
   font-weight: 400;
   font-family: ;/*フォント未*/
+  color: black;
 }
 
 .category-sec .link-ul.link-ul02 li a:hover {
   opacity: 0.75;
 }
 
+/*---------------------fotter---------------------*/
+#w-fotter {
+  padding: 61px 0 29px;
+  text-align: center;
+  background-color: aqua;
+}
 
+#w-fotter .f-box {
+  width: 1086px;
+  margin: 0 auto;
+}
+
+#w-fotter .f-logo {
+  margin-bottom: 70px;
+}
+
+#w-fotter .f-logo img {
+  width: 154px;
+}
+
+#w-fotter .f-navi {
+  margin-bottom: 124px;
+}
+
+#w-fotter f-navi.f-navi02 {
+  margin-bottom: 50px;
+}
+
+#w-fotter .f-navi li {
+  margin-right: 8px;
+  display: inline;
+  font-size: 1.3rem;
+  letter-spacing: 0.07em;
+}
+
+#w-fotter .f-navi li a {
+  margin-right: 10px;
+  color: inherit;
+}
+
+#w-fotter .f-navi li a:hover {
+  opacity: 0.7;
+}
+
+#w-fotter .f-sns-navi {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+#w-fotter .f-sns-navi li {
+  width: 28px;
+  margin: 0 32px;
+}
+
+#w-fotter .f-sns-navi li a:hover {
+  opacity: .75;
+}
