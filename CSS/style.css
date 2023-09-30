@@ -148,6 +148,8 @@ a {
 .home-content .slideUL .slick-dots {
   position: absolute;
   bottom: 24px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 /*---------------------body downbox---------------------*/
@@ -178,8 +180,22 @@ a {
   margin-bottom: 115px;
 }
 
-.head-line01 {
+.event-sec .content {
+  width: 1086px;
+  margin: 0 auto;
+}
+
+.event-sec .content .head-line01 {
   margin-bottom: 49px;
+}
+
+.event-sec .content .head-line01 .en {
+  font-size: 2.8rem;
+}
+
+.event-sec .com-slide {
+  margin: 0 0 0 auto;
+  width: calc(50% + 544px);
 }
 
 .head-line01 .en {
@@ -244,7 +260,7 @@ a {
   font-weight: bold;
 }
 
-.rec-sec .img-box .text-box .privce {
+.rec-sec .img-box .text-box .sub {
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-family: '', sans-serif;/*font未*/
