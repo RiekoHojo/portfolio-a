@@ -528,6 +528,17 @@ a {
     margin-bottom: 0;
     padding-bottom: 7px;
   }
+  #w-header .hBox {
+    max-width: inherit;
+  }
+  #w-header .hBox .nav-box {
+    padding-right: 0;
+    width: calc(100% - 100px);
+  }
+  #w-nav {
+    display: none;
+  }
+  
   #main .event-sec {
     margin-top: 44px;
     margin-bottom: 65px;
