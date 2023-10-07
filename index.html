@@ -7,6 +7,9 @@
     <meta name="description" content="1991年アメリカNY発祥のカフェ。焙煎から抽出までこだわったコーヒーとオーガニック野菜など産地食材を使用した料理を提供する。">
     <link href="https: //fonts.googleapis.com/css2? family= Zen+Kaku+Gothic+New & amily=DM+Serif+Display&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
   </head>
 
   <body id="home" class="body">
@@ -239,14 +242,14 @@
                 <div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 984px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 1000ms ease 0s;" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
                   <li>
                     <style>
-                      .main-content .slideUl li {
+                      .home-content .slideUl li {
                         height: 603px;
                         vertical-align: top;
                         padding:0;
                         margin:0;
-                        background: url(/images/top1.jpg) no-repeat center center/cover;
+                        background: url(images/top1.jpg) no-repeat center center/cover;
                       }
-                      .main-content .slideUl li a {
+                      .home-content .slideUl li a {
                         height: 603px;
                         display:block;
                         padding:0;
@@ -254,18 +257,18 @@
                         cursor:pointer;
                       }
                       @media all and (max-width: 896px) {
-                          .main-content .slideUl li {
+                          .home-content .slideUl li {
                               height:76vw;
                               padding:0;
                               margin:0;
                               background-image: url(images/top1.jpg);
                           }
-                          .main-content .slideUl li a {
+                          .home-content .slideUl li a {
                             height:76vw;
                             padding:0;
                             margin: 0;
                           }
-                          .main-content .slick-initialized .slick-slide {
+                          .home-content .slick-initialized .slick-slide {
                                 margin: 0;
                           }
                       }
@@ -278,7 +281,7 @@
                   <a href="https://" tabindex="-1"></a>
                   <style>
                     .main-content .slideUl li.sty01 {
-                        background-image: url(/images/top2.jpg);
+                        background-image: url(images/top2.jpg);
                         height: 603px;
                         vertical-align: top;
                     }
@@ -294,7 +297,7 @@
                             height:76vw;
                             padding:0;
                             margin: 0;
-                            background-image: url(/images/top2.jpg);
+                            background-image: url(images/top2.jpg);
                         }
                         .main-content .slideUl li.sty01 a {
                           height:76vw;
@@ -313,7 +316,7 @@
                   <a href="https://" tabindex="-1"></a>
                   <style>
                     .main-content .slideUl li.sty02 {
-                        background-image: url(/images/top3.jpg);
+                        background-image: url(images/top3.jpg);
                         height: 603px;
                         vertical-align: top;
                     }
@@ -329,7 +332,7 @@
                             height:76vw;
                             padding:0;
                             margin: 0;
-                            background-image: url(/images/top3.jpg);
+                            background-image: url(images/top3.jpg);
                         }
                         .main-content .slideUl li.sty02 a {
                           height:76vw;
@@ -345,13 +348,13 @@
                 </div>
             </div>
             <ul class="slick-dots" style role="tablist">
-              <li>
+              <li class="slick-active" role="presentation">
                 <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button>
               </li>
-              <li>
+              <li role="presentation" class="">
                 <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button>
               </li>
-              <li>
+              <li role="presentation" class="">
                 <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button>
               </li>
             </ul>
