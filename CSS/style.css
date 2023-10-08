@@ -201,6 +201,11 @@ h1 {
   box-sizing: border-box;
 }
 
+.home-content .slideUl .slick-dots li.slick-active {
+  background: #C8DCE6;
+  border-color: #c8dce6;
+}
+
 /*---------------------body downbox---------------------*/
 .down-box {
   margin-bottom: 56px;
@@ -263,6 +268,22 @@ h1 {
 
 .rec-sec .com-slide {
   margin-bottom: 123px;
+}
+
+.com-slide {
+  margin: 0 0 0 auto;
+  width: calc(50% + 544px);
+}
+
+.com-slide .com-list {
+  display: block;
+}
+
+.com-list li {
+  margin: 77px 31px 0 0 ;
+  padding-bottom: 2px;
+  width: 341px;
+  position: relative;
 }
 
 .com-btn {
@@ -742,6 +763,10 @@ h1 {
   #main {
     margin-bottom: 44px;
   }
+  #main .content {
+    margin: 0 22px;
+    width: auto!important;
+  }
   #main .event-sec {
     margin-top: 44px;
     margin-bottom: 65px;
@@ -841,10 +866,6 @@ h1 {
     margin: 0 0 9px;
     display: block;
   }
-  #main .content {
-    margin: 0 22px;
-    width: auto!important;
-  }
   #main .category-sec {
     padding-top: 40px;
   }
@@ -942,4 +963,58 @@ h1 {
     margin-right: 5px;
     width: 40px;
   }
+}
+
+/*---------------------アニメーション---------------------*/
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+.slick-dots .slick-slider {
+  margin-bottom: 30px;
 }
