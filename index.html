@@ -229,6 +229,26 @@
     </div>
     <style>
       @media screen and (max-width:749px) {
+        .menu-box {
+          padding: 55px 0 140px;
+        }
+        .menu-box .s-navi.outer {
+          margin: 0;
+          padding: 20px 23px;
+          border-top: 1px solid #DEDEDE;
+        }
+        .menu-box .s-navi.outer:last-child {
+          border-bottom: 1px solid #DEDEDE;
+        }
+        .menu-box .s-navi li.nav-main  .button.parent {
+          top: 10px;
+        }
+        .menu-box .s-navi .inner-navi {
+          margin: 30px 0 0 10px;
+        }
+        .menu-box .s-navi .news li .ico {
+          display: none;
+        }
       }
     </style>
     <!--途中---------------------------------------------------------------------------------------------------------------->
@@ -258,10 +278,10 @@
                       }
                       @media all and (max-width: 896px) {
                           .home-content .slideUl li {
-                              height:76vw;
-                              padding:0;
-                              margin:0;
-                              background-image: url(images/top1.jpg);
+                            height:76vw;
+                            padding:0;
+                            margin:0;
+                            background-image: url(images/top1.jpg);
                           }
                           .home-content .slideUl li a {
                             height:76vw;
@@ -280,12 +300,12 @@
                 <li class="sty01">
                   <a href="https://" tabindex="-1"></a>
                   <style>
-                    .main-content .slideUl li.sty01 {
-                        background-image: url(images/top2.jpg);
-                        height: 603px;
-                        vertical-align: top;
+                    .home-content .slideUl li.sty01 {
+                      background-image: url(images/top2.jpg);
+                      height: 603px;
+                      vertical-align: top;
                     }
-                    .main-content .slideUl li.sty01 a {
+                    .home-content .slideUl li.sty01 a {
                       height: 603px;
                       display:block;
                       padding:0;
@@ -293,19 +313,19 @@
                       cursor:pointer;
                     }
                     @media all and (max-width: 896px) {
-                        .main-content .slideUl li.sty01 {
-                            height:76vw;
-                            padding:0;
-                            margin: 0;
-                            background-image: url(images/top2.jpg);
+                        .home-content .slideUl li.sty01 {
+                          height:76vw;
+                          padding:0;
+                          margin: 0;
+                          background-image: url(images/top2.jpg);
                         }
-                        .main-content .slideUl li.sty01 a {
+                        .home-content .slideUl li.sty01 a {
                           height:76vw;
                           padding:0;
                           margin: 0;
                         }
-                        .main-content .slick-initialized .slick-slide {
-                              margin: 0;
+                        .home-content .slick-initialized .slick-slide {
+                          margin: 0;
                         }
                     }
                   </style>
@@ -315,12 +335,12 @@
                 <li class="sty02">
                   <a href="https://" tabindex="-1"></a>
                   <style>
-                    .main-content .slideUl li.sty02 {
-                        background-image: url(images/top3.jpg);
-                        height: 603px;
-                        vertical-align: top;
+                    .home-content .slideUl li.sty02 {
+                      background-image: url(images/top3.jpg);
+                      height: 603px;
+                      vertical-align: top;
                     }
-                    .main-content .slideUl li.sty02 a {
+                    .home-content .slideUl li.sty02 a {
                       height: 603px;
                       display:block;
                       padding:0;
@@ -328,19 +348,19 @@
                       cursor:pointer;
                     }
                     @media all and (max-width: 896px) {
-                        .main-content .slideUl li.sty02 {
-                            height:76vw;
-                            padding:0;
-                            margin: 0;
-                            background-image: url(images/top3.jpg);
+                        .home-content .slideUl li.sty02 {
+                          height:76vw;
+                          padding:0;
+                          margin: 0;
+                          background-image: url(images/top3.jpg);
                         }
-                        .main-content .slideUl li.sty02 a {
+                        .home-content .slideUl li.sty02 a {
                           height:76vw;
                           padding:0;
                           margin: 0;
                         }
-                        .main-content .slick-initialized .slick-slide {
-                              margin: 0;
+                        .home-content .slick-initialized .slick-slide {
+                          margin: 0;
                         }
                     }
                   </style>
@@ -474,7 +494,7 @@
                           <p class="sub">HOT</p>
                         </a>
                       </li>
-                      <li class="">
+                      <li class=""><!--途中-->
                         <a href="/">
                           <div class="photo">
                             <img src="images/recommended2.jpg" alt="今月の新作メニュー 10月">
@@ -834,5 +854,30 @@
         <small>©︎Harvest Mark Coffee inc.</small>
       </div>
     </footer>
+    <script>
+      $(function(){
+      $('.home-content .slideUl').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: true,
+          fade: true,
+          arrows: false,
+          autoplaySpeed: 3000,
+          speed: 1000,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+      });
+
+      $('#main .rec-sec .img-box').each(function(){
+          var $this = $(this);
+          $(this).find('.com-btn a').hover(function(){
+              $this.addClass('hover');
+          },function(){
+              $this.removeClass('hover');
+          })
+      })
+      })    
+    </script>
   </body>
 </html>

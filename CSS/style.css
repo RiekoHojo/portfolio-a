@@ -286,6 +286,14 @@ h1 {
   position: relative;
 }
 
+.com-list li .photo {
+  position: relative;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .com-btn {
   width: 222px;
 }
@@ -956,6 +964,11 @@ h1 {
     width:32px;
     margin:0 16px;
   }
+
+  .slick-slide {
+    width: 145px;
+    margin: 77px 20px 0 0;
+  }
 }
 
 @media all and (max-width: 350px) {
@@ -1017,4 +1030,11 @@ h1 {
 
 .slick-dots .slick-slider {
   margin-bottom: 30px;
+}
+
+.slick-slide {
+  margin: 77px 30px 0 0;
+  padding-bottom: 2px;
+  width: 341px;
+  position: relative;
 }
