@@ -172,25 +172,25 @@ h1 {
 }
 
 /*---------------------body homecontents---------------------*/
-.home-content .slideUL .slick-dots {
+.home-content .slideUl .slick-dots {
   position: absolute;
   bottom: 24px;
   left: 50%;
   transform: translate(-50%);
 }
 
-.home-content .slideUL .slick-dots {
+.home-content .slideUl .slick-dots {
   position: absolute;
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.home-content .slideUL .slick-dots li button {
+.home-content .slideUl .slick-dots li button {
   display: none;
 }
 
-.home-content .slideUL .slick-dots li {
+.home-content .slideUl .slick-dots li {
   margin: 0 2px;
   display: inline-block;
   width: 35px;
@@ -1033,7 +1033,11 @@ h1 {
 }
 
 .slick-slide {
-  margin: 77px 30px 0 0;
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  margin: none;
   padding-bottom: 2px;
   width: 341px;
   position: relative;
